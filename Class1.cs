@@ -251,7 +251,6 @@ public class DipteshAssignment4Test
         Assert.That(driver.FindElement(By.Id("experience-error")).Text, Is.EqualTo("Years of experience is required"));
     }
     [Test]
-    //insurance quote
     public void insuranceQuote10()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");  
