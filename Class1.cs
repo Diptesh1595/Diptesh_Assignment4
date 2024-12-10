@@ -58,7 +58,7 @@ public class DipteshAssignment4Test
     }
     [Test]
     public void insuranceQuote02()
-    {
+    { 
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
         driver.Manage().Window.Size = new System.Drawing.Size(1552, 832);
         driver.FindElement(By.Id("firstName")).Click();
@@ -251,9 +251,10 @@ public class DipteshAssignment4Test
         Assert.That(driver.FindElement(By.Id("experience-error")).Text, Is.EqualTo("Years of experience is required"));
     }
     [Test]
+    //insurance quote
     public void insuranceQuote10()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");  
         driver.Manage().Window.Size = new System.Drawing.Size(1552, 832);
         driver.FindElement(By.Id("firstName")).Click();
         driver.FindElement(By.Id("firstName")).SendKeys("Diptesh");
